@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black:#000103;
+    --primary: #333138;
+    --paragraph: #515052;
+    --bg: #fffffa;
+    --highlight: #ff312e;
+}
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.auth h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--paragraph);
+    margin: 2rem 0;
+}
+
+.auth form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 200px;
+    gap: 20px;
+    background-color: var(--primary);
+}
+
+.auth form input{
+    border: none;
+    padding: 1rem ;
+    border-bottom: 1px solid var(--paragraph);
+}
