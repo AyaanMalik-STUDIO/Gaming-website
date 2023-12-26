@@ -10,9 +10,9 @@ const Login = () => {
 
   const backgroundImageStyle = {
     backgroundImage: `url(${loginImage})`,
-    backgroundRepeat: 'no-repeat',  
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   const handleSubmit = (e) => {
@@ -20,7 +20,7 @@ const Login = () => {
 
     // Validate form data
     if (!formData.username || !formData.password) {
-      alert('Please fill in required fields');
+      alert("Please fill in required fields");
       return;
     }
 
@@ -29,7 +29,7 @@ const Login = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevFormData => ({
+    setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
@@ -40,7 +40,10 @@ const Login = () => {
       className="loginBg d-flex align-items-center justify-content-center text-center"
       style={{ ...backgroundImageStyle, minHeight: "100vh" }}
     >
-      <form className="p-5 rounded bg-light shadow-lg login-form" onSubmit={handleSubmit}>
+      <form
+        className="p-5 rounded bg-light shadow-lg login-form"
+        onSubmit={handleSubmit}
+      >
         <h1 className="my-3">Login</h1>
 
         <div className="my-2">
@@ -70,7 +73,8 @@ const Login = () => {
         </button>
 
         <p className="my-2">
-          If you don't have an account, please <Link to="/signup">Sign up</Link> here
+          If you don't have an account, please <Link to="/signup">Sign up</Link>{" "}
+          here
         </p>
       </form>
     </main>
