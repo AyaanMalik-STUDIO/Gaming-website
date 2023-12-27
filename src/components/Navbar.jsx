@@ -1,19 +1,18 @@
-// src/components/Navbar.js
+// Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          Blog
-        </Link>
+        <a className="navbar-brand" href="/">
+          MaliiikTimes.dev
+        </a>
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -21,21 +20,57 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/blog">
+              <a className="nav-link" href="/blog">
                 Blog
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/create">
-                Create Post
-              </Link>
+              <a className="nav-link" href="/coding">
+                Coding
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/tutorials">
+                Tutorials
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/projects">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/resources">
+                Resources
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/featured">
+                Featured
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/challenges">
+                Challenges
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </li>
+            {/* Add more links as needed */}
+            <li className="nav-item">
+              <a className="nav-link" href="/contact">
+                Contact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/services">
+                Services
+              </a>
             </li>
           </ul>
         </div>
