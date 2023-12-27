@@ -1,21 +1,29 @@
-import "./App.css";
-import Login from "./pages/Login";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Registration from "./pages/Registration";
-import Homepage from "./pages/Homepage";
+// src/App.js
+import React from 'react';
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BlogPage from './pages/BlogPage';
+import PostPage from './pages/PostPage';
+import CreatePostPage from './pages/CreatePostPage';
+import EditPostPage from './pages/EditPostPage';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <BrowserRouter>
+    <Router>
+      <div>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Registration />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/posts/:id" element={<PostPage />} />
+          <Route path="/create" element={<CreatePostPage />} />
+          <Route path="/edit/:id" element={<EditPostPage />} />
         </Routes>
-      </BrowserRouter>
-    </>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
