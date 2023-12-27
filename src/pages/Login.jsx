@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import loginImage from "../components/images/loginBg.jpg";
+import loginImage from "../images/loginBg.jpg";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +24,6 @@ const Login = () => {
       return;
     }
 
-    // Continue with form submission or other logic
   };
 
   const handleChange = (e) => {
