@@ -1,5 +1,15 @@
 *{
   font-family: jost;
+  color: #000;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #000;
+}
+
+p{
+  color: #000;
+  font-size: 0.7rem;
 }
 
 /* App.css */
@@ -19,7 +29,7 @@
   margin:0 0.85rem;
 }
 
-.left-sidebar, .right-sidebar {
+.right-sidebar {
   background-color: #ddd;
   padding: 10px;
 }
@@ -34,3 +44,13 @@
   background-color: #555;
   color: white;
 }
+
+.left-sidebar{
+  margin: 1rem;
+}
+
+.left-sidebar .card{
+  background-color: transparent;
+  border: none;
+}
+
