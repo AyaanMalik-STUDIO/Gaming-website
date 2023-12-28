@@ -5,8 +5,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="header p-1 text-center">
-      <h1>MaliiikTimes.dev</h1>
+    <div className="header text-center">
+      <h1 className="py-2 m-0">Maliiik.dev</h1>
     </div>
   );
 };
