@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import LeftSidebar from './components/LeftSidebar';
 import RightSidebar from './components/RightSidebar';
 import MainContent from './components/MainContent';
-import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

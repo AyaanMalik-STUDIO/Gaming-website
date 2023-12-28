@@ -1,41 +1,32 @@
-*{
-  font-family: jost;
+* {
+  font-family: "VT323", monospace;
   color: #000;
 }
-
-h1,h2,h3,h4,h5,h6{
-  color: #000;
+body{
+  max-width: 90vw;
+  margin: auto;
 }
 
-p{
-  color: #000;
-  font-size: 0.7rem;
-}
-
-/* App.css */
-.header {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
+p {
+  font-size: 0.8rem;
+  
 }
 
 .navbar {
-  background-color: #555;
-  padding: 10px;
+  border-top:1px solid #000;
+  border-bottom:1px solid #000;
 }
 
-.navbar li{
-  margin:0 0.85rem;
+.navbar li {
+  margin: 0 0.85rem;
 }
 
-.right-sidebar {
-  background-color: #ddd;
-  padding: 10px;
+.navbar .navbar-toggler{
+  border: none;
+  box-shadow: none;
 }
 
 .main-content {
-  padding: 20px;
 }
 
 .footer {
@@ -45,12 +36,21 @@ p{
   color: white;
 }
 
-.left-sidebar{
+.left-sidebar,.right-sidebar {
   margin: 1rem;
 }
 
-.left-sidebar .card{
+.left-sidebar .card, .right-sidebar .card {
   background-color: transparent;
   border: none;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
+/* Styles for a focused form control */
+.form-control:focus,.form-control:hover,.form-control:active  {
+  box-shadow: none;
+  border-color: none;
+}
