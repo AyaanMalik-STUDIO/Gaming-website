@@ -17,7 +17,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span><i class="bi bi-newspaper h2"></i></span>
+          <span><i className="bi bi-newspaper h2"></i></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">

@@ -3,9 +3,10 @@ import React from "react";
 import Img from "../images/11.jpg";
 import Img1 from "../images/12.jpg";
 
+
 const LeftSidebar = () => {
   return (
-    <aside className="left-sidebar py-2">
+    <aside className="left-sidebar py-2 sticky-top">
       <div className="sidebar-item">
       <hr/>
         {/* First Card */}
