@@ -1,7 +1,6 @@
 // App.js
 import React from 'react';
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 import LeftSidebar from './components/LeftSidebar';
 import RightSidebar from './components/RightSidebar';
 import MainContent from './components/MainContent';
@@ -11,7 +10,6 @@ function App() {
   return (
     <div>
       <Header />
-      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3">
