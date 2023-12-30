@@ -12,13 +12,13 @@ function App() {
       <Header />
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 ps-0">
             <LeftSidebar />
           </div>
           <div className="col-md-6">
             <MainContent />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 pe-0">
             <RightSidebar />
           </div>
         </div>

@@ -5,7 +5,7 @@ import Img1 from "../images/12.jpg";
 
 const FeaturedCard = ({ title, image, content, timestamp }) => {
   return (
-    <div className="card border-top mt-3 py-3">
+    <div className="card mt-3 p-3">
       <div className="row g-0">
         {/* First Column (Image) */}
         <div className="col-12 col-md-6">
@@ -13,18 +13,20 @@ const FeaturedCard = ({ title, image, content, timestamp }) => {
             src={image}
             className="img-fluid"
             alt="..."
-            style={{ height: 200 }}
+            style={{ height: 100 }}
           />
         </div>
         {/* Second Column (Card Body) */}
         <div className="col-12 col-md-6">
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
-            <p className="card-text">{content}</p>
-            <a className="text-dark" href="/">
-              Read More
-            </a>
           </div>
+        </div>
+        <div className="col-12">
+          <p className="card-text">{content}</p>
+          <a className="text-dark" href="/">
+            Read More
+          </a>
         </div>
       </div>
     </div>
@@ -51,12 +53,11 @@ const LeftSidebar = () => {
   return (
     <aside className="left-sidebar py-2 sticky-top">
       <div className="sidebar-item">
-
         {/* Featured Cards */}
         {featuredData.map((data, index) => (
           <FeaturedCard key={index} {...data} />
         ))}
-  
+
         {/* Add more FeaturedCard components if needed */}
       </div>
     </aside>

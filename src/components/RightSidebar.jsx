@@ -36,7 +36,7 @@ const SubscribeForm = () => {
 
 const CourseCard = ({ title, image }) => {
   return (
-    <div className="card border-top mt-3 py-3">
+    <div className="card mt-3 p-3">
       <div className="row g-0">
         {/* Center the Image */}
         <div className="col-12 col-md-4 d-flex justify-content-center">
@@ -56,7 +56,7 @@ const CourseCard = ({ title, image }) => {
 const RightSidebar = () => {
   const courseData = [
     { title: "The Course of JavaScript 2023", image: Image14 },
-    { title: "Another JavaScript Course", image: Image14 },
+    { title: "Reactjs Course 2023", image: Image14 },
     { title: "JavaScript Mastery", image: Image14 },
   ];
 

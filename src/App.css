@@ -1,6 +1,8 @@
 * {
   color: #000;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'pirata one', sans-serif;
+  background-color:  #fff;
+  border-color: #000;
 }
 body{
   max-width: 90vw;
@@ -9,26 +11,24 @@ body{
 
 p {
   font-size: 1rem;
-  font-family: 'Afacad', sans-serif; 
+  font-family: 'grenze gotisch', sans-serif; 
   line-height: 1;
   text-align: justify;
 }
 
 a{
-  font-family: 'Afacad', sans-serif; 
+  font-family: 'pirata one', sans-serif; 
   font-weight: 600;
 }
 .card{
   border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #000;
 }
 
 .navbar {
-  border-top:1px solid #000;
-  border-bottom:1px solid #000;
-}
-
-.navbar li {
-  margin: 0 0.85rem;
+  border-top:2px solid #000;
+  border-bottom:2px solid #000;
 }
 
 .navbar .navbar-toggler{
@@ -40,13 +40,6 @@ a{
   margin: 2rem 0;
 }
 
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #555;
-  color: white;
-}
-
 .left-sidebar,.right-sidebar {
   margin: 1rem 0;
 }
@@ -54,6 +47,7 @@ a{
 .left-sidebar .card, .right-sidebar .card {
   background-color: transparent;
   border: none;
+  border-top: 1px solid #000;
 }
 
 .form-control {

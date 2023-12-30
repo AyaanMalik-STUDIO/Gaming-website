@@ -1,7 +1,5 @@
 // Header.js
 import React from "react";
-// import Logo from '../images/logo.png'; // Replace with your actual logo image
-// import TelephoneIcon from '../images/telephone-icon.png'; // Replace with your actual telephone icon image
 
 const Header = () => {
   return (
@@ -81,6 +79,18 @@ const Header = () => {
                 </a>
               </li>
             </ul>
+            {/* Search bar */}
+            <form className="d-flex">
+              <input
+                className="form-control me-2 border-0 border-bottom px-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
       </nav>
