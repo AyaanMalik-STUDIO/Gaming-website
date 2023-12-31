@@ -1,12 +1,16 @@
 * {
   color: #000;
   font-family: 'pirata one', sans-serif;
-  background-color:  #fff;
+  /* background-color:  #fff; */
   border-color: #000;
 }
 body{
   max-width: 90vw;
   margin: auto;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
@@ -19,16 +23,17 @@ p {
 a{
   font-family: 'pirata one', sans-serif; 
   font-weight: 600;
+  color: #000;
 }
 .card{
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid grey;
 }
 
 .navbar {
-  border-top:2px solid #000;
-  border-bottom:2px solid #000;
+  border-top:2px solid grey;
+  border-bottom:2px solid grey;
 }
 
 .navbar .navbar-toggler{
@@ -36,26 +41,36 @@ a{
   box-shadow: none;
 }
 
-.main-content {
-  margin: 2rem 0;
-}
-
 .left-sidebar,.right-sidebar {
-  margin: 1rem 0;
+  margin:1rem 0;
 }
 
 .left-sidebar .card, .right-sidebar .card {
   background-color: transparent;
   border: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid grey;
 }
 
 .form-control {
   border-radius: 0;
+  background-color: transparent;
+  border-bottom:1px solid grey !important;
 }
 
 /* Styles for a focused form control */
 .form-control:focus,.form-control:hover,.form-control:active  {
   box-shadow: none;
   border-color: none;
+  background-color: transparent;
+}
+
+.slick-prev,.slick-next{
+  display: none !important;
+}
+
+footer .container-fluid{
+  padding: 3rem 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+
 }

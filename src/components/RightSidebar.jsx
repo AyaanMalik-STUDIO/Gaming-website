@@ -13,20 +13,20 @@ const SubscribeForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className="form-group my-2">
+        <div className="form-group my-2 pb-1">
           <h6>Subscribe for all the new updates</h6>
           <p>Never miss new updates</p>
           <input
             name="email"
             type="email"
-            className="form-control border-0 border-top border-bottom"
+            className="form-control border-0 border-bottom"
             id="email"
             placeholder="Email Address"
             autoComplete="off"
             required
           />
         </div>
-        <button type="submit" className="btn border mt-2 w-100">
+        <button type="submit" className="btn mt-1 w-100 bg-black text-white">
           Subscribe
         </button>
       </form>
@@ -36,7 +36,7 @@ const SubscribeForm = () => {
 
 const CourseCard = ({ title, image }) => {
   return (
-    <div className="card mt-3 p-3">
+    <div className="card p-3">
       <div className="row g-0">
         {/* Center the Image */}
         <div className="col-12 col-md-4 d-flex justify-content-center">
@@ -61,7 +61,7 @@ const RightSidebar = () => {
   ];
 
   return (
-    <aside className="right-sidebar py-2 sticky-top">
+    <aside className="right-sidebar py-2">
       <div className="sidebar-content">
         {courseData.map(({ title, image }, index) => (
           <div key={index}>
