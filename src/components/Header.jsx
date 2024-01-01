@@ -33,36 +33,6 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/coding">
-                  Coding
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/tutorials">
-                  Tutorials
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/projects">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/resources">
-                  Resources
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/featured">
-                  Featured
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/challenges">
-                  Challenges
-                </a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="/about">
                   About
                 </a>
@@ -71,11 +41,6 @@ const Header = () => {
               <li className="nav-item">
                 <a className="nav-link" href="/contact">
                   Contact
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/services">
-                  Services
                 </a>
               </li>
             </ul>

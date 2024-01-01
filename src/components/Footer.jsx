@@ -70,35 +70,35 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="mt-3">
               <a className="text-dark"
-                href="https://github.com/your-github-profile"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-github mx-2 h1"></i>
               </a>
               <a className="text-dark"
-                href="https://linkedin.com/in/your-linkedin-profile"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i class="bi bi-linkedin mx-2 h1"></i>
               </a>
               <a className="text-dark"
-                href="https://twitter.com/your-twitter-profile"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-twitter mx-2 h1"></i>
               </a>
               <a className="text-dark"
-                href="https://instagram.com/your-instagram-profile"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-instagram mx-2 h1"></i>
               </a>
               <a className="text-dark"
-                href="https://youtube.com/your-youtube-channel"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
