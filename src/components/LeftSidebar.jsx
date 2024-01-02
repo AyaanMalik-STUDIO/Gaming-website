@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedCardTop = ({ title, image, content, timestamp }) => {
   return (
-    <div className="card p-3">
+    <div className="FeaturedCardTop card p-3">
       <div className="row g-0">
         {/* First Column (Image) */}
         <div className="col-12 col-md-6">
@@ -34,7 +34,7 @@ const FeaturedCardTop = ({ title, image, content, timestamp }) => {
 
 const FeaturedCardBottom = ({ title, image, content, timestamp }) => {
   return (
-    <div className="card p-3">
+    <div className="FeaturedCardBottom card p-3">
       <div className="row g-0">
         {/* First Column (Image) */}
         

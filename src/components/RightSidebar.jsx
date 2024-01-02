@@ -11,7 +11,7 @@ const SubscribeForm = () => {
   };
 
   return (
-    <div>
+    <div className="mt-4">
       <form onSubmit={handleSubmit}>
         <div className="form-group my-2 pb-1">
           <h6>Subscribe for all the new updates</h6>
@@ -36,14 +36,14 @@ const SubscribeForm = () => {
 
 const CourseCard = ({ title, image }) => {
   return (
-    <div className="card p-3">
+    <div className="CourseCard card p-3">
       <div className="row g-0">
         {/* Center the Image */}
-        <div className="col-12 col-md-4 d-flex justify-content-center">
+        <div className="col-4 col-md-4 d-flex justify-content-center">
           <img src={image} className="img-fluid" alt={title} />
         </div>
         {/* Second Column (Card Body) */}
-        <div className="col-12 col-md-8">
+        <div className="col-8 col-md-8 text-center">
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
           </div>
