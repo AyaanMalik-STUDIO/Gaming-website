@@ -1,5 +1,6 @@
 // Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,51 +8,30 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-4">
-            <h1>Maliiik.Dev</h1>
+            <h1>MaliiikTimes</h1>
             <p>"Inspiring Digital Journeys, One Line at a Time."</p>
           </div>
           <div className="col-12 col-md-4">
-            <div className="row">
-            <h5>Nagivation and links</h5>
-              <div className="col-6 col-md-6">
-                <ul className="list-unstyled">
-                  <li>
-                    <a className="text-dark" href="/blog">Blog</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/coding">Coding</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/tutorials">Tutorials</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/projects">Projects</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/resources">Resources</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/featured">Featured</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-6 col-md-6">
-                <ul className="list-unstyled">
-                  <li>
-                    <a className="text-dark" href="/challenges">Challenges</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/about">About</a>
-                  </li>
-                  {/* Add more links as needed */}
-                  <li>
-                    <a className="text-dark" href="/contact">Contact</a>
-                  </li>
-                  <li>
-                    <a className="text-dark" href="/services">Services</a>
-                  </li>
-                </ul>
-              </div>
+            <div className="">
+              <h5>Nagivation and links</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <Link className="text-dark" href="/blog">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-dark" href="/about">
+                    About
+                  </Link>
+                </li>
+                {/* Add more links as needed */}
+                <li>
+                  <Link className="text-dark" href="/contact">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="col-12 col-md-4">
@@ -69,50 +49,57 @@ const Footer = () => {
             </form>
             {/* Social Icons */}
             <div className="mt-3">
-              <a className="text-dark"
+              <Link
+                className="text-dark"
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-github mx-2 h1"></i>
-              </a>
-              <a className="text-dark"
+              </Link>
+              <Link
+                className="text-dark"
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i class="bi bi-linkedin mx-2 h1"></i>
-              </a>
-              <a className="text-dark"
+              </Link>
+              <Link
+                className="text-dark"
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-twitter mx-2 h1"></i>
-              </a>
-              <a className="text-dark"
+              </Link>
+              <Link
+                className="text-dark"
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-instagram mx-2 h1"></i>
-              </a>
-              <a className="text-dark"
+              </Link>
+              <Link
+                className="text-dark"
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-youtube mx-2 h1"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center">
-            <div class="copyright mt-3">
-                <small className="">&copy; 2023 Maliiik.dev. All rights reserved.</small>
-            </div>
+        <div class="copyright mt-3">
+          <small className="">
+            &copy; 2023 Maliiik.dev. All rights reserved.
+          </small>
         </div>
+      </div>
     </footer>
   );
 };

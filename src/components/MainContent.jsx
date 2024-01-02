@@ -3,9 +3,10 @@ import React from "react";
 import Slider from "react-slick";
 import Image13 from "../images/13.jpg";
 import ProfileImg from "../images/profileImage.jpg";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LeftSideBar from "./LeftSidebar";
+import RightSideBar from "./RightSidebar";
 
 const cardData = [
   {
@@ -50,37 +51,55 @@ const MainContent = () => {
   };
 
   return (
-    <main className="main-content mt-4 py-3">
-      <Slider {...settings}>
-        {cardData.map((card, index) => (
-          <div key={index} className="card">
-            <img
-              src={card.image}
-              className="card-img-top p-2"
-              alt={`Card ${index + 1}`}
-              style={{ height: 300 }}
-            />
-            <div className="card-body p-3">
-            <a href="/" className="text-dark">{card.category}</a>
-              <h2 className="card-title">{card.title}</h2>
-              <p className="card-text">{card.content}</p>
-              <div className="d-flex justify-content-between align-items-center">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={ProfileImg}
-                    alt="User"
-                    className="me-2"
-                    style={{ height: 30 }}
-                  />
-                  <span>{card.author}</span>
-                  <small className="text-muted mx-2">{card.timestamp}</small>
-                </div>
-              </div>
-            </div>
+    <>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-3 ps-0 mt-3">
+            <LeftSideBar />
           </div>
-        ))}
-      </Slider>
-    </main>
+          <div className="col-md-6">
+            <main className="main-content mt-4 py-3">
+              <Slider {...settings}>
+                {cardData.map((card, index) => (
+                  <div key={index} className="card">
+                    <img
+                      src={card.image}
+                      className="card-img-top p-2"
+                      alt={`Card ${index + 1}`}
+                      style={{ height: 300 }}
+                    />
+                    <div className="card-body p-3">
+                      <a href="/" className="text-dark">
+                        {card.category}
+                      </a>
+                      <h2 className="card-title">{card.title}</h2>
+                      <p className="card-text">{card.content}</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div className="d-flex align-items-center">
+                          <img
+                            src={ProfileImg}
+                            alt="User"
+                            className="me-2"
+                            style={{ height: 30 }}
+                          />
+                          <span>{card.author}</span>
+                          <small className="text-muted mx-2">
+                            {card.timestamp}
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+            </main>
+          </div>
+          <div className="col-md-3 pe-0 mt-3">
+            <RightSideBar />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

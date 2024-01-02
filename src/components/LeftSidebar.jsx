@@ -2,6 +2,7 @@
 import React from "react";
 import Img from "../images/11.jpg";
 import Img1 from "../images/12.jpg";
+import { Link } from "react-router-dom";
 
 const FeaturedCardTop = ({ title, image, content, timestamp }) => {
   return (
@@ -21,9 +22,9 @@ const FeaturedCardTop = ({ title, image, content, timestamp }) => {
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{content}</p>
-            <a className="text-dark" href="/">
+            <Link className="text-dark" href="/">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -52,9 +53,9 @@ const FeaturedCardBottom = ({ title, image, content, timestamp }) => {
         </div>
         <div className="mt-2">
           <p className="card-text">{content}</p>
-          <a className="text-dark" href="/">
+          <Link className="text-dark" href="/">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>

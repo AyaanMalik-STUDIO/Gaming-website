@@ -1,17 +1,18 @@
 // Header.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <div className="header text-center">
-        <h1 className="py-2 m-0">Maliiik.dev</h1>
+        <h1 className="py-2 m-0">MaliiikTimes</h1>
       </div>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="/">
-            Maliiik.dev
-          </a>
+          <Link className="navbar-brand" href="/">
+            MaliiikTimes
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,20 +29,20 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/blog">
+                <Link className="nav-link" href="/">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" href="/">
                   About
-                </a>
+                </Link>
               </li>
               {/* Add more links as needed */}
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <Link className="nav-link" href="/">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             {/* Search bar */}
