@@ -1,16 +1,16 @@
 * {
   color: #000;
   font-family: 'pirata one', sans-serif;
-  /* background-color:  #fff; */
+  background-color:  #fff;
   border-color: #000;
 }
 body{
   max-width: 90vw;
   margin: auto;
-  background-image: url(./images/background.jpg);
+  /* background-image: url(./images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 p {
